@@ -26,7 +26,7 @@ li i{
 header{
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
 }
 .color-head{
    background-color: #fff;
@@ -36,12 +36,16 @@ header{
 .watch{
     background: rgba(204, 204, 204, 0.315);
 }
+
 .watch .col-lg-8{
-margin-top: 200px;
+margin-top: 170px;
 justify-content: center;
 position: relative;
 }
-.watch .col-lg-8 h1{
+.watch .text{
+    padding-top: 70px;
+}
+.watch h1{
     font-size: 80px;
     font-weight: 600;
     line-height: 1.2;
@@ -50,6 +54,7 @@ position: relative;
     /* padding-top: 150px; */
     
 }
+
 .watch .col-lg-8 p{
     font-size: 17px;
     line-height: 1.6;
@@ -148,6 +153,7 @@ position: relative;
 }
 .arrival .card{
     border: none;
+    overflow: hidden;
 }
 .arrival .card .image{
    overflow: hidden;
@@ -160,6 +166,7 @@ position: relative;
 .arrival .card:hover img{
    transform: scale(1.1);
 }
+
 
 .man{
     padding-top: 70px;
@@ -223,6 +230,16 @@ position: relative;
     position: relative;
     overflow: hidden;
 }
+ .popular .appear{
+    display: none;
+}
+/*
+.popular .appear:nth-child(1),
+.popular .appear:nth-child(2),
+.popular .appear:nth-child(3){
+   display: flex;
+} */
+
 .popular .card i{
     position: absolute;
     right: 0;
@@ -664,8 +681,8 @@ position: relative;
     .watch .img{
         width: 55%;
     }
-    .man .arrange{
-        padding-top: 85px;
+    .man .arrange {
+        padding-top: 0px;
     }
     .secure{
         margin-top: 50px;
@@ -723,6 +740,7 @@ position: relative;
     header button{
         margin-right: 20px;
     }
+   
     .man .arrange{
         width: 85%;
     }
