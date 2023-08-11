@@ -6,6 +6,7 @@
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/all.min.css">
     <title>home</title>
 </head>
@@ -38,9 +39,7 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-            <li>
-               <i class="fa-solid fa-magnifying-glass"></i>
-            </li> 
+          
             <li>
                <i class="fa-solid fa-user"></i>
             </li> 
@@ -53,17 +52,16 @@
       </nav>
 </header>
 
-
 <section class="watch">
     <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-6 col-sm-12">
               <div class="card">
-                <h1 data-animation="fadeInLeft" data-delay=".4s" data-duration="2000ms" class="" style="animation-delay: 0.4s;">Select Your New Perfect Style</h1>
-                <p data-animation="fadeInLeft" data-delay=".7s" data-duration="2000ms" class="" style="animation-delay: 0.7s;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat is aute irure.</p>
+                <h1 class="" style="animation-delay: 0.4s;">Select Your New Perfect Style</h1>
+                <p  class="" style="animation-delay: 0.7s;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat is aute irure.</p>
              </div>
              <button type="button" class="btn btn-secondary">
-                <a href="#">Shop Now</a>
+                <a href="#pop">Shop Now</a>
               </button>
         </div>
           <div class="col-lg-4 col-md-6 col-sm-12 hidden">
@@ -72,9 +70,6 @@
             </div>
           </div>
         </div>
-        <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s" data-duration="2000ms" style="animation-delay: 0.8s;">
-           
-         </div>
       </div>
 
 </section>
@@ -108,7 +103,7 @@
             
            </div>
            <div class="col-lg-4 col-md-6 col-sm-12 m-auto">
-              <div class="card padd">
+              <div class="card">
                 <div class="image">
                    <img src="img/xnew_product3.png">
                 </div>
@@ -165,7 +160,7 @@
 </section>
 
 
-<section class="popular">
+<section class="popular" id="pop">
     <div class="container">
         <div class="section-tittle mb-70 text-center change">
             <h2>Popular Items</h2>
@@ -175,7 +170,7 @@
 
         <div class="row">
            <div class="col-lg-4 col-md-6">
-              <div class="card">
+              <div class="card appear">
                   <div class="image">
                       <img src="img/xpopular1.png">
                       <i class="fa-solid fa-heart"></i>
@@ -187,7 +182,7 @@
 
            </div>
            <div class="col-lg-4 col-md-6">
-            <div class="card">
+            <div class="card appear">
                 <div class="image">
                     <img src="img/xpopular2.png">
                     <i class="fa-solid fa-heart"></i>
@@ -200,7 +195,7 @@
          </div>
 
          <div class="col-lg-4 col-md-6">
-            <div class="card">
+            <div class="card appear">
                 <div class="image">
                     <img src="img/xpopular3.png">
                     <i class="fa-solid fa-heart"></i>
@@ -213,7 +208,7 @@
          </div>
 
          <div class="col-lg-4 col-md-6">
-            <div class="card">
+            <div class="card appear">
                 <div class="image">
                     <img src="img/xpopular4.png">
                     <i class="fa-solid fa-heart"></i>
@@ -225,7 +220,7 @@
 
          </div>
          <div class="col-lg-4 col-md-6">
-          <div class="card">
+          <div class="card appear">
               <div class="image">
                   <img src="img/xpopular5.png">
                   <i class="fa-solid fa-heart"></i>
@@ -238,7 +233,7 @@
        </div>
 
        <div class="col-lg-4 col-md-6">
-          <div class="card">
+          <div class="card appear">
               <div class="image">
                   <img src="img/xpopular6.png">
                   <i class="fa-solid fa-heart"></i>
@@ -250,12 +245,50 @@
 
        </div>
 
+       <div class="col-lg-4 col-md-6">
+        <div class="card appear">
+            <div class="image">
+                <img src="img/xpopular3.png">
+                <i class="fa-solid fa-heart"></i>
+                <button class="btn">Add To cart</button>
+            </div>
+            <h3>Thermo Ball Etip Gloves</h3>
+            <span>$ 45,743</span>
+        </div>
+
+     </div>
+
+     <div class="col-lg-4 col-md-6">
+        <div class="card appear">
+            <div class="image">
+                <img src="img/xpopular4.png">
+                <i class="fa-solid fa-heart"></i>
+                <button class="btn">Add To cart</button>
+            </div>
+            <h3>Thermo Ball Etip Gloves</h3>
+            <span>$ 45,743</span>
+        </div>
+
+     </div>
+     <div class="col-lg-4 col-md-6">
+      <div class="card appear">
+          <div class="image">
+              <img src="img/xpopular5.png">
+              <i class="fa-solid fa-heart"></i>
+              <button class="btn">Add To cart</button>
+          </div>
+          <h3>Thermo Ball Etip Gloves</h3>
+          <span>$ 45,743</span>
+      </div>
+
+   </div>
+
 
         </div>
      <div class="row justify-content-center">
          <div class="button">
-            <button type="button" class="btn2 btn-secondary">
-                <a href="#">VIEW MORE PRODUCTS</a>
+            <button type="button" class="btn2 btn-secondary" id="show">
+                VIEW MORE PRODUCTS
             </button>
         </div>
            
@@ -266,7 +299,7 @@
 </section>
 
 
-<section class="vid">
+<!-- <section class="vid">
     <div class="container-fluid">
         <div class="row">
            <div class="col-lg-12">
@@ -278,7 +311,7 @@
 
 
 
-</section>
+</section> -->
 
 
 <section class="choice">
@@ -286,19 +319,18 @@
        <div class="row">
            <div class="col-lg-6 col-md-6 col-sm-12 show">
                <div class="card">
-                    <h1>Watch of Choice</h1>
-                    <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                        irure dolor in reprehenderit in voluptate velit esse.</p>
-                    <button type="button" class="btn3 btn-secondary">
-                            <a href="#">SHOW WATCHES</a>
+                  <h1>This product on offer</h1>
+                  <div class="detailsProduct">
+                    <button onclick="ViewDetails()" id="detailsPro" class="btn3 btn-secondary">
+                            SHOW DETAILS
                     </button>
+                 </div> 
                </div>
         </div>
            <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="card">
                 <img src="img/xchoce_watch1.webp">
                 </div>
-
            </div>
 
 
@@ -312,28 +344,23 @@
 <section class="choice">
     <div class="container">
        <div class="row">
-
             <div class="col-lg-6 col-md-6">
                 <div class="card">
                    <img src="img/xpopular4.png">
                </div>
-
             </div>
          <div class="col-lg-6 show col-md-6">
            <div class="card">
-                <h1>Watch of Choice</h1>
-                <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                    irure dolor in reprehenderit in voluptate velit esse.</p>
-                <button type="button" class="btn3 btn-secondary">
-                        <a href="#">SHOW WATCHES</a>
-                </button>
+                <h1>This product on offer</h1>
+                    <div class="detailsProduct">
+                        <button onclick="ViewDetailsP2()" class="btn3 btn-secondary">
+                                SHOW DETAILS
+                        </button>
+                    </div> 
             </div>
           </div>
-
         </div>
-
     </div>
-
 </section>
 
 
@@ -447,8 +474,8 @@
             <div class="face">
                 <a class="lin" href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a class="lin" href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a class="lin"  href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a class="lin"  href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="lin" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="lin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
 
             </div>
         </div>
@@ -464,7 +491,9 @@
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/scriptFile.js"></script>
     
 </body>
 </html>
