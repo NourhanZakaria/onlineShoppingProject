@@ -1,218 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/main.css" />
-		<link rel="stylesheet" href="css/all.min.css" />
-		<title>home</title>
-	</head>
-	<body>
-		<header class="header color-head">
-			<nav class="navbar navbar-expand-lg navbar-light container">
-				<a class="navbar-brand" href="#">
-					<img src="img/download.webp" />
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>home</title>
+  </head>
+  <body>
+    <header class="header color-head">
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand" href="#">
+          <img src="img/download.webp" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav m-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html"
-								>Home <span class="sr-only">(current)</span></a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="shop.html">Shop</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="about.html">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
-						</li>
-					</ul>
-					<ul class="navbar-nav ml-auto">
-						<li>
-							<i class="fa-solid fa-magnifying-glass"></i>
-						</li>
-						<li>
-							<i class="fa-solid fa-user"></i>
-						</li>
-						<li>
-							<i class="fa-solid fa-shop"></i>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-		<div class="sep"></div>
-		<div class="lib-card">
-			<img src="img/edit.svg" alt="" class="edit-cover" id="editCover" />
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-user"></i>
+            </li>
+            <li>
+              <i class="fa-solid fa-shop"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="sep"></div>
+    <div class="lib-card">
+      <img src="img/edit.svg" alt="" class="edit-cover" id="editCover" />
 
-			<form
-				class="edit-form display"
-				id="editCoverForm"
-			>
-				<input
-					type="file"
-					name="lib-cover"
-					id="lib-cover"
-					style="display: none"
-				/>
-				<label for="lib-cover" class="select-file-btn">Select image</label>
-				<button type="submit" name="img" value="lib-cover">
-					<img src="img/check-mark.svg" alt="" />
-				</button>
-				<input type="hidden" name="lib-id" value="2" />
-				<input type="hidden" name="process" value="6" />
-			</form>
+      <form class="edit-form display" id="editCoverForm">
+        <input
+          type="file"
+          name="lib-cover"
+          id="lib-cover"
+          style="display: none"
+        />
+        <label for="lib-cover" class="select-file-btn">Select image</label>
+        <button type="submit" name="img" value="lib-cover">
+          <img src="img/check-mark.svg" alt="" />
+        </button>
+        <input type="hidden" name="lib-id" value="2" />
+        <input type="hidden" name="process" value="6" />
+      </form>
 
-			<div class="lib-card__cover-c">
-				<img
-					src="
+      <div class="lib-card__cover-c">
+        <img
+          src="
 					img/cover.png			"
-					alt=""
-					class="lib-card__cover"
-				/>
-			</div>
-			<div class="lib-card__pic-c">
-				<img src="img/edit.svg" alt="" class="edit-pic" id="editPic" />
+          alt=""
+          class="lib-card__cover"
+        />
+      </div>
+      <div class="lib-card__pic-c">
+        <img src="img/edit.svg" alt="" class="edit-pic" id="editPic" />
 
-				<form
-					class="edit-form display"
-					id="editPicForm"
-				>
-					<input
-						type="file"
-						name="lib-pic"
-						id="lib-pic"
-						style="display: none"
-					/>
-					<label for="lib-pic" class="select-file-btn">Select image</label>
-					<button type="submit" name="img" value="lib-pic">
-						<img src="img/check-mark.svg" alt="" />
-					</button>
-					<input type="hidden" name="lib-id" value="2" />
-					<input type="hidden" name="process" value="6" />
-				</form>
-				<div class="lib-card__pic-frame">
-					<img
-						src="
+        <form class="edit-form display" id="editPicForm">
+          <input
+            type="file"
+            name="lib-pic"
+            id="lib-pic"
+            style="display: none"
+          />
+          <label for="lib-pic" class="select-file-btn">Select image</label>
+          <button type="submit" name="img" value="lib-pic">
+            <img src="img/check-mark.svg" alt="" />
+          </button>
+          <input type="hidden" name="lib-id" value="2" />
+          <input type="hidden" name="process" value="6" />
+        </form>
+        <div class="lib-card__pic-frame">
+          <img
+            src="
 					img/profile.jpg				"
-						alt=""
-						class="lib-card__pic"
-					/>
-				</div>
-			</div>
-			<div class="lib-card__title">
-				<a href=""> science </a>
-			</div>
-		</div>
-		<div class="profile__cart-c">
-			<table class="profile__cart">
-				<thead >
-					<tr>
-						<td>NO.</td>
-						<td>Pic</td>
-						<td>Name</td>
-						<td>Price</td>
-						<td>.</td>
-					</tr>
-				</thead>
-				<tbody id="cart">
-				</tbody>
-			</table>
-		</div>
-		<section class="foot">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6 col-sm-12">
-						<div class="card">
-							<div class="logo">
-								<a href="index.html">
-									<img src="img/download.webp" alt="" />
-								</a>
-							</div>
+            alt=""
+            class="lib-card__pic"
+          />
+        </div>
+      </div>
+      <div class="lib-card__title">
+        <a href=""> science </a>
+      </div>
+    </div>
+    <div class="profile__cart-c">
+      <table class="profile__cart">
+        <thead>
+          <tr>
+            <td>NO.</td>
+            <td>Pic</td>
+            <td>Name</td>
+            <td>Price</td>
+            <td>.</td>
+          </tr>
+        </thead>
+        <tbody id="cart"></tbody>
+      </table>
+    </div>
+    <div>
+      <input type="button" value="click me" onclick="addo()" />
+      <input type="text" id="name" required />
+      <input type="number" id="price" required />
+      <input type="file" id="img" required />
+      <input type="button" value="List" onclick="listAll()" />
+      <table id="allItems">
+        <tr>
+          <th>num</th>
+          <th>image</th>
+          <th>name</th>
+          <th>price</th>
+        </tr>
+      </table>
+    </div>
+    <section class="foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="img/download.webp" alt="" />
+                </a>
+              </div>
 
-							<p>
-								Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf
-								sed do eiusmod tem.
-							</p>
-						</div>
-					</div>
+              <p>
+                Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf
+                sed do eiusmod tem.
+              </p>
+            </div>
+          </div>
 
-					<div class="col-lg-3 col-md-6 col-sm-12">
-						<div class="card">
-							<h4>Quick Links</h4>
-							<ul>
-								<li><a href="#">About</a></li>
-								<li><a href="#"> Offers &amp; Discounts</a></li>
-								<li><a href="#"> Get Coupon</a></li>
-								<li><a href="#"> Contact Us</a></li>
-							</ul>
-						</div>
-					</div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#"> Offers &amp; Discounts</a></li>
+                <li><a href="#"> Get Coupon</a></li>
+                <li><a href="#"> Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
 
-					<div class="col-lg-3 col-md-6 col-sm-12">
-						<div class="card">
-							<h4>New Products</h4>
-							<ul>
-								<li><a href="#">Woman Cloth</a></li>
-								<li><a href="#">Fashion Accessories</a></li>
-								<li><a href="#"> Man Accessories</a></li>
-								<li><a href="#"> Rubber made Toys</a></li>
-							</ul>
-						</div>
-					</div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <h4>New Products</h4>
+              <ul>
+                <li><a href="#">Woman Cloth</a></li>
+                <li><a href="#">Fashion Accessories</a></li>
+                <li><a href="#"> Man Accessories</a></li>
+                <li><a href="#"> Rubber made Toys</a></li>
+              </ul>
+            </div>
+          </div>
 
-					<div class="col-lg-3 col-md-6 col-sm-12">
-						<div class="card">
-							<h4>Support</h4>
-							<ul>
-								<li><a href="#" class="freq">Frequently Asked Questions</a></li>
-								<li><a href="#">Terms &amp; Conditions</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#" class="freq">Report a Payment Issue</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#" class="freq">Frequently Asked Questions</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#" class="freq">Report a Payment Issue</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-				<div class="corlib">
-					<div class="face2">
-						<p>
-							Copyright ©2022 All rights reserved | This template is made with
-							<i class="fa-solid fa-heart"></i>
-							<a class="nour" href="https://colorlib.com/">by Nour</a>
-						</p>
-					</div>
-					<div class="face">
-						<a class="lin" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-						<a class="lin" href="#"><i class="fa-brands fa-twitter"></i></a>
-						<a class="lin" href="#"><i class="fa-brands fa-instagram"></i></a>
-						<a class="lin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-					</div>
-				</div>
-			</div>
-		</section>
+        <div class="corlib">
+          <div class="face2">
+            <p>
+              Copyright ©2022 All rights reserved | This template is made with
+              <i class="fa-solid fa-heart"></i>
+              <a class="nour" href="https://colorlib.com/">by Nour</a>
+            </p>
+          </div>
+          <div class="face">
+            <a class="lin" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="lin" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="lin" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="lin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<script src="js/jquery.slim.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
-		<script src="js/profile.js"></script>
-		<div class="msg-box" id="msgBox"></div>
-	</body>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/addProduct.js"></script>
+    <div class="msg-box" id="msgBox"></div>
+  </body>
 </html>
