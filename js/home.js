@@ -1,12 +1,4 @@
 //only this page
-function setProductCardBtn(btn,id){
-	if (isInCart(id)) {
-		btn.innerText="Remove from cart";
-	}else{
-		btn.innerText="Add To cart";
-		
-	}
-}
 function createProductNode(name, price, imgSrc, id) {
 	let producHTML = `
 	<div class="col-lg-4 col-md-6">
@@ -29,11 +21,12 @@ function createProductNode(name, price, imgSrc, id) {
 	return productNode;
 }
 //code
-const popularProductsC = document.getElementById("popularProductsC");
-products = JSON.parse(localStorage.getItem("products"));
+// //momen
+// const popularProductsC = document.getElementById("popularProductsC");
+// products = JSON.parse(localStorage.getItem("items"));
 
-for (let [index, product] of products.entries()) {
-	popularProductsC.appendChild(
-		createProductNode(product.name, product.price, product.imgSrc, index)
-	);
-}
+// for (let [index, product] of products.entries()) {
+// 	popularProductsC.appendChild(
+// 		createProductNode(product.name, product.price, product.imgSrc, index)
+// 	);
+// }

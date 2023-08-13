@@ -39,14 +39,14 @@ function orderCartList(){
 }
 function listCart() {
 	let cart = document.getElementById('cart')
-	products = JSON.parse(localStorage.getItem("products"));
+	products = JSON.parse(localStorage.getItem("items"));
 	while(cart.firstChild){
 		cart.removeChild(cart.firstChild)
 	}
 	for (let [index, product] of products.entries()) {
 		if(isInCart(index))
 			cart.appendChild(
-				createProductNode(product.name, product.price, product.pic, index)
+				createProductNode(product.name, product.price, product.imgSrc, index)
 			);
 	}
 	orderCartList()

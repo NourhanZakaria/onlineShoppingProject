@@ -20,7 +20,7 @@ function addo(){
   price: price.value,
   imgSrc: 'img/'+image.files[0].name,
 }
-console.log(storageProducts)
+// console.log(storageProducts)
 storageProducts.push(newProduct)
 localStorage.setItem('items', JSON.stringify(storageProducts));
 }
@@ -35,8 +35,8 @@ function listAll(){
   const parent = document.getElementById('allItems');
   parent.style.visibility='visible'
   storageProducts=JSON.parse( localStorage.getItem( 'items' ))
-  console.log(parent);
-  console.log(storageProducts);   
+//   console.log(parent);
+//   console.log(storageProducts);   
   for (let i = 0; i < storageProducts.length; i++) {
     
     const element = `
@@ -59,6 +59,14 @@ function listAll(){
 function myfunction(e){
  var checkdel= e.target.className
  var deleteOne = document.getElementById(checkdel)
+ var  itemToRemove = +deleteOne.id-1
+ const carts = JSON.parse(localStorage.getItem('carts'))
+ console.log(carts)
+ for( let [index,cart] of Object.entries(carts)){
+	 carts[index].splice(itemToRemove,1)
+	 console.log(itemToRemove)
+ }
+ localStorage.setItem('carts', JSON.stringify(carts));
  deleteOne.remove()
  storageProducts=JSON.parse( localStorage.getItem( 'items' ))
  storageProducts.splice((checkdel-1),1)
