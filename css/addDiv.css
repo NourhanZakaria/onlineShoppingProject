@@ -1,0 +1,26 @@
+#adminContainer{
+    display: none;
+    margin-top: 200px;
+}
+#idButton{
+    width: 50px;
+}
+#listProducts{
+    margin-top: 50px;
+    width: 50px;
+}
+#allItems{
+   visibility: hidden;
+    border: 2 solid black;
+}
+#allItems img{
+    width: 50px;
+}
+
+
+#allItems tr td{
+    padding-left: 20px;
+}
+#pad{
+    padding-left: 50px;
+}

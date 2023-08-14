@@ -30,9 +30,6 @@
                   <h1>${firstProduct[1]}</h1>
                   <p>The discount : ${firstProduct[2]}</p>
                   <p>The price after discount : ${firstProduct[3]}</p>
-                  <button type="button" class="btn3 btn-secondary">
-                          <a href="#">Add to cart</a>
-                  </button>
               </div>
              </div>
             </div>
@@ -41,7 +38,6 @@
   
          productDiv.innerHTML=productDetails;
         //productDiv.appendChild(productDetails);
-
 
          }, 500)};
  
@@ -68,9 +64,7 @@ function ViewDetailsP2(){
               <h1>${secondProduct[1]}</h1>
               <p>The discount : ${secondProduct[2]}</p>
               <p>The price after discount : ${secondProduct[3]}</p>
-              <button type="button" class="btn3 btn-secondary">
-                      <a href="#">Add to cart</a>
-              </button>
+              
           </div>
          </div>
         </div>

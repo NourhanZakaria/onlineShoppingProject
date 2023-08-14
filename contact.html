@@ -1,237 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <title>home</title>
-</head>
-<body>
-
-
- <header class="header color-head ">
-    
-    <nav class="navbar navbar-expand-lg navbar-light container">
-        <a class="navbar-brand" href="#">
-            <img src="img/download.webp">
+  </head>
+  <body>
+    <header class="header color-head">
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <a class="navbar-brand" href="/">
+          <img src="img/download.webp" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto">
-            <li class="nav-item ">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="about.html">About</a>
-            </li>
             <li class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
             <li>
-               <i class="fa-solid fa-user"></i>
-            </li> 
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
             <li>
-                <i class="fa-solid fa-shop"></i>
-            </li> 
+              <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li>
+              <i class="fa-solid fa-shop"></i>
+            </li>
           </ul>
-
         </div>
       </nav>
-</header>
+    </header>
 
-<section class="contact"> 
-    <div class="container">
+    <section class="contact">
+      <div class="container">
         <div class="row">
-            <h2>Contacts</h2>
+          <h2>Contacts</h2>
         </div>
-    </div>
-</section>
-<section class="map">
-    <div class="container">
+      </div>
+    </section>
+    <section class="map">
+      <div class="container">
         <div class="col-lg-12">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6900.688162038423!2d31.2509435656221!3d30.14157720374212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14586b9fbd1c11cf%3A0xfe9f6cd53676c141!2sZamzam%20Hospital!5e0!3m2!1sen!2seg!4v1664319316647!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>    
-    </div>
-</section>
-
-
-
-<section class="get">
- <div class="container">
-       <div class="row">
-            <div class="col-lg-8 col-md-12">
-               <div class="card">
-                    <h2 class="contact-title">Get in Touch</h2>
-                    <form>
-                        <textarea class="form-control" placeholder="Enter Message" id="exampleFormControlTextarea1" rows="7"></textarea>
-                    </form>
-                    <div class="flex">
-                        <div class="padd">
-                           <input type="name" placeholder="Enter your name" class="form-control" id="exampleInputEmail1" width="45%">
-                        </div>
-                        <div>
-                          <input type="email" placeholder="Email" class="form-control" id="exampleInputEmail1"  width="45%">
-                        </div>
-                    </div>
-                    <input type="name" placeholder="Enter Subject" class="form-control" id="exampleInputEmail1" width="45%">
-                    
-               </div>
-               <div class="button-position">
-                  <button type="submit" class="button button-contactForm boxed-btn">Send</button>
-               </div>
-            </div>
-           
-            <div class="col-lg-4 col-md-12">
-               <div class="card">
-                   <div class="house">
-                       <div class="logo-text">
-                            <div class="logo">
-                                <i class="fa-solid fa-house"></i>
-                            </div>
-                            <div class="text">
-                                    <h3>Buttonwood, California.</h3>
-                                    <p>Rosemead, CA 91770</p>
-                            </div> 
-                        </div>  
-                   </div>
-
-                   <div class="phone">
-                    <div class="logo-text">
-                         <div class="logo">
-                            <i class="fa-solid fa-phone"></i>
-                         </div>
-                         <div class="text">
-                                 <h3>+1 253 565 2365</h3>
-                                 <p>Mon to Fri 9am to 6pm</p>
-                         </div> 
-                     </div>  
-                </div>
-
-                <div class="email">
-                    <div class="logo-text">
-                         <div class="logo">
-                            <i class="fa-solid fa-envelope"></i>
-                         </div>
-                         <div class="text">
-                                 <h3>support@colorlib.com</h3>
-                                 <p>Send us your query anytime!</p>
-                         </div> 
-                     </div>  
-                </div>
-
-                
-               </div>
-            </div>
-
-
-
-       </div>
-
- </div>
-
-</section>
-
-<section class="foot">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card">
-                <div class="logo">
-                     <a href="index.html">
-                         <img src="img/download.webp" alt="">
-                     </a>
-                </div>
- 
-                <p>Asorem ipsum adipolor sdit amet, consectetur adipisicing 
-                    elitcf sed do eiusmod tem.</p>
- 
-              </div>
- 
-            </div>
- 
-            <div class="col-lg-3 col-md-6 col-sm-12">
-             <div class="card">
-                 <h4>Quick Links</h4>
-                 <ul>
-                     <li><a href="#">About</a></li>
-                     <li><a href="#"> Offers &amp; Discounts</a></li>
-                     <li><a href="#"> Get Coupon</a></li>
-                     <li><a href="#"> Contact Us</a></li>
-                 </ul>
- 
-                
-             </div>
- 
-           </div>
- 
-           <div class="col-lg-3 col-md-6 col-sm-12">
-             <div class="card">
-                 <h4>New Products</h4>
-                 <ul>
-                     <li><a href="#">Woman Cloth</a></li>
-                     <li><a href="#">Fashion Accessories</a></li>
-                     <li><a href="#"> Man Accessories</a></li>
-                     <li><a href="#"> Rubber made Toys</a></li>
-                 </ul>
-                
-             </div>
- 
-           </div>
- 
-           <div class="col-lg-3 col-md-6 col-sm-12">
-             <div class="card">
-                 <h4>Support</h4>
-                 <ul>
-                     <li><a href="#">Frequently Asked Questions</a></li>
-                     <li><a href="#">Terms &amp; Conditions</a></li>
-                     <li><a href="#">Privacy Policy</a></li>
-                     <li><a href="#">Report a Payment Issue</a></li>
-                 </ul>
-                      
-             </div>
- 
-           </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6900.688162038423!2d31.2509435656221!3d30.14157720374212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14586b9fbd1c11cf%3A0xfe9f6cd53676c141!2sZamzam%20Hospital!5e0!3m2!1sen!2seg!4v1664319316647!5m2!1sen!2seg"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
- 
+      </div>
+    </section>
+
+    <section class="get">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+            <div class="card">
+              <h2 class="contact-title">Get in Touch</h2>
+              <form>
+                <textarea
+                  class="form-control"
+                  placeholder="Enter Message"
+                  id="exampleFormControlTextarea1"
+                  rows="7"
+                ></textarea>
+              </form>
+              <div class="flex">
+                <div class="padd">
+                  <input
+                    type="name"
+                    placeholder="Enter your name"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    width="45%"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    width="45%"
+                  />
+                </div>
+              </div>
+              <input
+                type="name"
+                placeholder="Enter Subject"
+                class="form-control"
+                id="exampleInputEmail1"
+                width="45%"
+              />
+            </div>
+            <div class="button-position">
+              <button type="submit" class="button button-contactForm boxed-btn">
+                Send
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <div class="card">
+              <div class="house">
+                <div class="logo-text">
+                  <div class="logo">
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                  <div class="text">
+                    <h3>Buttonwood, California.</h3>
+                    <p>Rosemead, CA 91770</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="phone">
+                <div class="logo-text">
+                  <div class="logo">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="text">
+                    <h3>+1 253 565 2365</h3>
+                    <p>Mon to Fri 9am to 6pm</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="email">
+                <div class="logo-text">
+                  <div class="logo">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="text">
+                    <h3>support@colorlib.com</h3>
+                    <p>Send us your query anytime!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="img/download.webp" alt="" />
+                </a>
+              </div>
+
+              <p>
+                Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf
+                sed do eiusmod tem.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#"> Offers &amp; Discounts</a></li>
+                <li><a href="#"> Get Coupon</a></li>
+                <li><a href="#"> Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <h4>New Products</h4>
+              <ul>
+                <li><a href="#">Woman Cloth</a></li>
+                <li><a href="#">Fashion Accessories</a></li>
+                <li><a href="#"> Man Accessories</a></li>
+                <li><a href="#"> Rubber made Toys</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#">Frequently Asked Questions</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Report a Payment Issue</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div class="corlib">
-            <div class="face2">
-             <p>Copyright ©2022 All rights reserved | This template is made with 
-             <i class="fa-solid fa-heart"></i>
-             <a class="nour" href="https://colorlib.com/">by Nour</a></p>
-             
-         
-             </div>
-             <div class="face">
-                 <a class="lin" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                 <a class="lin" href="#"><i class="fa-brands fa-twitter"></i></a>
-                 <a class="lin"  href="#"><i class="fa-brands fa-instagram"></i></a>
-                 <a class="lin"  href="#"><i class="fa-brands fa-linkedin-in"></i></a>
- 
-             </div>
-         </div>
-    </div>
- 
- </section>
- 
+          <div class="face2">
+            <p>
+              Copyright ©2022 All rights reserved | This template is made with
+              <i class="fa-solid fa-heart"></i>
+              <a class="nour" href="https://colorlib.com/"
+                >by Nourhan,mostafa,momen</a
+              >
+            </p>
+          </div>
+          <div class="face">
+            <a class="lin" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="lin" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="lin" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="lin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-<script src="js/jquery.slim.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

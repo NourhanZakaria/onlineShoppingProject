@@ -6,16 +6,15 @@
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/all.min.css">
+	<script src="js/mmain.js"></script>
     <title>home</title>
 </head>
 <body>
-
 <header class="header color-head ">
     
     <nav class="navbar navbar-expand-lg navbar-light container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img src="img/download.webp">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -29,9 +28,6 @@
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link"  href="about.html">About</a>
             </li>
             <li class="nav-item">
@@ -39,9 +35,11 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-          
             <li>
-               <i class="fa-solid fa-user"></i>
+               <i class="fa-solid fa-magnifying-glass"></i>
+            </li> 
+            <li>
+               <a href="profile.html"><i class="fa-solid fa-user"></i></a>
             </li> 
             <li>
                 <i class="fa-solid fa-shop"></i>
@@ -52,13 +50,14 @@
       </nav>
 </header>
 
+
 <section class="watch">
     <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-6 col-sm-12">
               <div class="card">
-                <h1 class="" style="animation-delay: 0.4s;">Select Your New Perfect Style</h1>
-                <p  class="" style="animation-delay: 0.7s;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat is aute irure.</p>
+                <h1 data-animation="fadeInLeft" data-delay=".4s" data-duration="2000ms" class="" style="animation-delay: 0.4s;">Select Your New Perfect Style</h1>
+                <p data-animation="fadeInLeft" data-delay=".7s" data-duration="2000ms" class="" style="animation-delay: 0.7s;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat is aute irure.</p>
              </div>
              <button type="button" class="btn btn-secondary">
                 <a href="#pop">Shop Now</a>
@@ -70,6 +69,9 @@
             </div>
           </div>
         </div>
+        <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s" data-duration="2000ms" style="animation-delay: 0.8s;">
+           
+         </div>
       </div>
 
 </section>
@@ -103,7 +105,7 @@
             
            </div>
            <div class="col-lg-4 col-md-6 col-sm-12 m-auto">
-              <div class="card">
+              <div class="card padd">
                 <div class="image">
                    <img src="img/xnew_product3.png">
                 </div>
@@ -160,146 +162,35 @@
 </section>
 
 
-<section class="popular" id="pop">
+<section id="pop" class="popular">
     <div class="container">
         <div class="section-tittle mb-70 text-center change">
             <h2>Popular Items</h2>
             <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+			<div id="noItems" style="font-size:24px; color:tomato; display: none;">No products</div>
         </div>
 
-
-        <div class="row">
-           <div class="col-lg-4 col-md-6">
-              <div class="card appear">
-                  <div class="image">
-                      <img src="img/xpopular1.png">
-                      <i class="fa-solid fa-heart"></i>
-                      <button class="btn">Add To cart</button>
-                  </div>
-                  <h3>Thermo Ball Etip Gloves</h3>
-                  <span>$ 45,743</span>
-              </div>
-
-           </div>
-           <div class="col-lg-4 col-md-6">
-            <div class="card appear">
-                <div class="image">
-                    <img src="img/xpopular2.png">
-                    <i class="fa-solid fa-heart"></i>
-                    <button class="btn">Add To cart</button>
-                </div>
-                <h3>Thermo Ball Etip Gloves</h3>
-                <span>$ 45,743</span>
-            </div>
-
-         </div>
-
-         <div class="col-lg-4 col-md-6">
-            <div class="card appear">
-                <div class="image">
-                    <img src="img/xpopular3.png">
-                    <i class="fa-solid fa-heart"></i>
-                    <button class="btn">Add To cart</button>
-                </div>
-                <h3>Thermo Ball Etip Gloves</h3>
-                <span>$ 45,743</span>
-            </div>
-
-         </div>
-
-         <div class="col-lg-4 col-md-6">
-            <div class="card appear">
-                <div class="image">
-                    <img src="img/xpopular4.png">
-                    <i class="fa-solid fa-heart"></i>
-                    <button class="btn">Add To cart</button>
-                </div>
-                <h3>Thermo Ball Etip Gloves</h3>
-                <span>$ 45,743</span>
-            </div>
-
-         </div>
-         <div class="col-lg-4 col-md-6">
-          <div class="card appear">
-              <div class="image">
-                  <img src="img/xpopular5.png">
-                  <i class="fa-solid fa-heart"></i>
-                  <button class="btn">Add To cart</button>
-              </div>
-              <h3>Thermo Ball Etip Gloves</h3>
-              <span>$ 45,743</span>
-          </div>
-
+        <div class="row" id="popularProductsC">
+			
        </div>
-
-       <div class="col-lg-4 col-md-6">
-          <div class="card appear">
-              <div class="image">
-                  <img src="img/xpopular6.png">
-                  <i class="fa-solid fa-heart"></i>
-                  <button class="btn">Add To cart</button>
-              </div>
-              <h3>Thermo Ball Etip Gloves</h3>
-              <span>$ 45,743</span>
-          </div>
-
-       </div>
-
-       <div class="col-lg-4 col-md-6">
-        <div class="card appear">
-            <div class="image">
-                <img src="img/xpopular3.png">
-                <i class="fa-solid fa-heart"></i>
-                <button class="btn">Add To cart</button>
-            </div>
-            <h3>Thermo Ball Etip Gloves</h3>
-            <span>$ 45,743</span>
-        </div>
-
-     </div>
-
-     <div class="col-lg-4 col-md-6">
-        <div class="card appear">
-            <div class="image">
-                <img src="img/xpopular4.png">
-                <i class="fa-solid fa-heart"></i>
-                <button class="btn">Add To cart</button>
-            </div>
-            <h3>Thermo Ball Etip Gloves</h3>
-            <span>$ 45,743</span>
-        </div>
-
-     </div>
-     <div class="col-lg-4 col-md-6">
-      <div class="card appear">
-          <div class="image">
-              <img src="img/xpopular5.png">
-              <i class="fa-solid fa-heart"></i>
-              <button class="btn">Add To cart</button>
-          </div>
-          <h3>Thermo Ball Etip Gloves</h3>
-          <span>$ 45,743</span>
-      </div>
-
-   </div>
 
 
         </div>
      <div class="row justify-content-center">
          <div class="button">
             <button type="button" class="btn2 btn-secondary" id="show">
-                VIEW MORE PRODUCTS
+                <div href="#">VIEW MORE PRODUCTS</div>
             </button>
         </div>
            
      </div>
  
 
-    </div>
+
 </section>
 
 
-<!-- <section class="vid">
+<section class="vid">
     <div class="container-fluid">
         <div class="row">
            <div class="col-lg-12">
@@ -311,7 +202,7 @@
 
 
 
-</section> -->
+</section>
 
 
 <section class="choice">
@@ -467,23 +358,22 @@
            <div class="face2">
             <p>Copyright ©2022 All rights reserved | This template is made with 
             <i class="fa-solid fa-heart"></i>
-            <a class="nour" href="https://colorlib.com/">by Nour</a></p>
+            <a class="nour" href="https://colorlib.com/">by Nourhan,mostafa,momen</a></p>
             
         
             </div>
             <div class="face">
                 <a class="lin" href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a class="lin" href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a class="lin" href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a class="lin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="lin"  href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="lin"  href="#"><i class="fa-brands fa-linkedin-in"></i></a>
 
             </div>
         </div>
    </div>
 
 </section>
-
-
+<div class="msg-box" id="msgBox"></div>
 
 
 
@@ -491,9 +381,8 @@
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/wow.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/home.js"></script>
 <script src="js/scriptFile.js"></script>
-    
 </body>
 </html>
