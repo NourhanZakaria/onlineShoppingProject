@@ -1,3 +1,9 @@
+var checkUser=  localStorage.getItem( 'currentUser' )
+console.log(checkUser)
+if(checkUser=='admin'){
+  document.getElementById('adminContainer').style.display='block'
+}
+
 var storageProducts = [
   
 ];
@@ -7,11 +13,14 @@ if(!JSON.parse( localStorage.getItem( 'items' ) )){
 
 
 function addo(){
+  if(document.getElementById('name').value&&document.getElementById('price').value&&document.getElementById('img').value){
+   
+
   document.getElementById('allItems').style.visibility='hidden'
   if(JSON.parse( localStorage.getItem( 'items' ) )){
       var storageProducts=JSON.parse( localStorage.getItem( 'items' ) )
   }
-  console.log('butt')
+  // console.log('butt')
   var name =document.getElementById('name')
   var price =document.getElementById('price')
   var image =document.getElementById('img')
@@ -23,6 +32,10 @@ function addo(){
 // console.log(storageProducts)
 storageProducts.push(newProduct)
 localStorage.setItem('items', JSON.stringify(storageProducts));
+}
+else{
+  alert('enter all data')
+}
 }
 
 
@@ -45,7 +58,7 @@ function listAll(){
     <td ><img id="smallIM" src="${storageProducts[i].imgSrc}" ></td>
     <td >${storageProducts[i].name}</td>
     <td >${storageProducts[i].price}</td>
-    <td > <input type="button" value ='remove' class="${i+1}" onclick="myfunction(event)"></td>
+    <td  id="pad"> <input type="button" value ='remove' class="${i+1}" onclick="myfunction(event)"></td>
   </tr>
     `;
     
@@ -59,15 +72,15 @@ function listAll(){
 function myfunction(e){
  var checkdel= e.target.className
  var deleteOne = document.getElementById(checkdel)
- var  itemToRemove = +deleteOne.id-1
- const carts = JSON.parse(localStorage.getItem('carts'))
- console.log(carts)
- for( let [index,cart] of Object.entries(carts)){
-	 carts[index].splice(itemToRemove,1)
-	 console.log(itemToRemove)
- }
- localStorage.setItem('carts', JSON.stringify(carts));
- deleteOne.remove()
+//  var  itemToRemove = +deleteOne.id-1
+//  const carts = JSON.parse(localStorage.getItem('carts'))
+//  console.log(carts)
+//  for( let [index,cart] of Object.entries(carts)){
+// 	 carts[index].splice(itemToRemove,1)
+// 	 console.log(itemToRemove)
+//  }
+//  localStorage.setItem('carts', JSON.stringify(carts));
+//  deleteOne.remove()
  storageProducts=JSON.parse( localStorage.getItem( 'items' ))
  storageProducts.splice((checkdel-1),1)
  localStorage.setItem('items', JSON.stringify(storageProducts));

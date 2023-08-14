@@ -64,9 +64,7 @@ function ViewDetailsP2(){
               <h1>${secondProduct[1]}</h1>
               <p>The discount : ${secondProduct[2]}</p>
               <p>The price after discount : ${secondProduct[3]}</p>
-              <button type="button" class="btn3 btn-secondary">
-                      <a href="#">Add to cart</a>
-              </button>
+              
           </div>
          </div>
         </div>

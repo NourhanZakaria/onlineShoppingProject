@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/all.min.css" />
-	<script src="js/mmain.js"></script>
+    <link rel="stylesheet" href="css/addDiv.css" />
+    <script src="js/mmain.js"></script>
     <title>home</title>
   </head>
   <body>
@@ -46,7 +47,7 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </li>
             <li>
-				<a href="profile.html"><i class="fa-solid fa-user"></i></a>
+              <a href="profile.html"><i class="fa-solid fa-user"></i></a>
             </li>
             <li>
               <i class="fa-solid fa-shop"></i>
@@ -112,7 +113,7 @@
         <a href=""> science </a>
       </div>
     </div>
-    <div class="profile__cart-c">
+    <!-- <div class="profile__cart-c">
       <table class="profile__cart">
         <thead>
           <tr>
@@ -125,21 +126,15 @@
         </thead>
         <tbody id="cart"></tbody>
       </table>
-    </div>
-    <div>
-      <input type="button" value="click me" onclick="addo()" />
-      <input type="text" id="name" required />
-      <input type="number" id="price" required />
+    </div> -->
+    <div id="adminContainer">
+      <input type="text" placeholder="product name" id="name" required />
+      <input type="number" id="price" placeholder="price" />
       <input type="file" id="img" required />
-      <input type="button" value="List" onclick="listAll()" />
-      <table id="allItems">
-        <tr>
-          <th>num</th>
-          <th>image</th>
-          <th>name</th>
-          <th>price</th>
-        </tr>
-      </table>
+      <input id="idButton" type="button" value="ADD" onclick="addo()" />
+      <br />
+      <input id="listProducts" type="button" value="List" onclick="listAll()" />
+      <table id="allItems"></table>
     </div>
     <section class="foot">
       <div class="container">
