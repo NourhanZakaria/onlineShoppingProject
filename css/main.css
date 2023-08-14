@@ -334,9 +334,10 @@ position: relative;
     color: #fff;
     z-index: 3;
 }
-.choice .button{
-    padding-top: 100px;
+.choice .detailsProduct{
+    padding-top: 50px;
 }
+
 .choice .btn3{
     border: none;
     width: 255px;
@@ -347,7 +348,7 @@ position: relative;
     font-size: 16px;
     font-weight: 600;
     position: relative;
- 
+    cursor: pointer;
     
 }
 .btn3::after{

@@ -76,7 +76,7 @@ function ViewDetailsP2(){
         </div>
       </div>
     `;     
-
+     console.log(typeof productDetails);
      productDiv.innerHTML=productDetails;
     //productDiv.appendChild(productDetails);
 
