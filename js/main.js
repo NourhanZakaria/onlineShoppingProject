@@ -7,7 +7,10 @@
 // 	  }
 
 //   }
-
+var storageuser = localStorage.getItem("currentUser");
+if (storageuser!="admin"&&storageuser!="shimaa"){
+	location.assign("loginPage.html")
+}
 
 
 var show = document.getElementById("show");
