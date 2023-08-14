@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/loginStyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="index.html">
+        <h1>Login</h1>
+        <div class="inputs">
+          <input
+            id="currentUser"
+            type="text"
+            placeholder="User name"
+            name="userName"
+            required
+          />
+        </div>
+        <div class="inputs">
+          <input
+            type="password"
+            placeholder="Password"
+            name="Password"
+            required
+          />
+        </div>
+        <div class="rem-for">
+          <label for="rem"
+            ><input type="checkbox" name="Remember" id="rem" />Remember
+            Me</label
+          >
+          <a href="">Forget Password</a>
+        </div>
+        <div class="Submit">
+          <input type="submit" value="login" onclick="tryy()" />
+        </div>
+        <div class="registerNew">
+          <a href=""> Sign Up</a>
+        </div>
+      </form>
+    </div>
+    <script src="js/whoAmI.js"></script>
+  </body>
+</html>
