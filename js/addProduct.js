@@ -32,9 +32,10 @@ function addo(){
 // console.log(storageProducts)
 storageProducts.push(newProduct)
 localStorage.setItem('items', JSON.stringify(storageProducts));
+ msgBox('item has been added')
 }
 else{
-  alert('enter all data')
+  msgBox('enter all data')
 }
 }
 
@@ -72,15 +73,7 @@ function listAll(){
 function myfunction(e){
  var checkdel= e.target.className
  var deleteOne = document.getElementById(checkdel)
-//  var  itemToRemove = +deleteOne.id-1
-//  const carts = JSON.parse(localStorage.getItem('carts'))
-//  console.log(carts)
-//  for( let [index,cart] of Object.entries(carts)){
-// 	 carts[index].splice(itemToRemove,1)
-// 	 console.log(itemToRemove)
-//  }
-//  localStorage.setItem('carts', JSON.stringify(carts));
-//  deleteOne.remove()
+ deleteOne.remove()
  storageProducts=JSON.parse( localStorage.getItem( 'items' ))
  storageProducts.splice((checkdel-1),1)
  localStorage.setItem('items', JSON.stringify(storageProducts));

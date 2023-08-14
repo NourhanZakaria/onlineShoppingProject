@@ -1,5 +1,6 @@
 #adminContainer{
     display: none;
+    margin-top: 200px;
 }
 #idButton{
     width: 50px;

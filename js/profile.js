@@ -51,5 +51,8 @@ function listCart() {
 	}
 	orderCartList()
 }
-//code 
+
+//code
+document.getElementById('catName').textContent=localStorage.getItem( 'currentUser' )
+
 listCart()
