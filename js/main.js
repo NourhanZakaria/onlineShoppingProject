@@ -7,6 +7,9 @@
 // 	  }
 
 //   }
+
+
+
 var show = document.getElementById("show");
 var lastItem = 0;
 if ((parent = document.getElementById("popularProductsC"))) allItemss();
